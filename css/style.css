@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+body {
+    font-family: "Roboto", sans-serif;
+
+}
+
+* {
+    color: #fff;
+}
+
+button {
+    transition: all ease 0.3s;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.btn button {
+    background: linear-gradient(67.21deg, #9E68B5 14.79%, #460FE3 85.21%);
+}
+
+.slip header {
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+}
+
+.scrolled {
+    -webkit-backdrop-filter: blur(14px);
+    backdrop-filter: blur(14px);
+}
+
+.instagram:hover svg path {
+    fill: #E1306C;
+}
+
+.facebook:hover svg path {
+    fill: #1974EC;
+}
+
+.linkedin:hover svg path {
+    fill: #0077B4;
+}
+
+.twitter:hover svg path {
+    fill: #1C9CEA;
+}
+
+.youtube:hover svg path {
+    fill: #FF0000;
+}
+
+.box-shadow {
+    box-shadow: rgb(23 14 23) 0px 25px 20px 5px;
+    background-color: rgb(22 12 22);
+}
+
+header * {
+    transition: unset;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 0 12px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .toogle-menu {
+        display: block !important;
+    }
+}
+
+@media (min-width: 1500px) {
+    .container {
+        max-width: 1560px;
+    }
+}
+
+@media (max-height: 667px) {
+    .banner-img img {
+        top: -130px;
+    }
+
+    .work-img img {
+        top: -190px;
+    }
+}

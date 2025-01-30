@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="Canter" />
+    <meta property="og:description" content="Access your computer remotely in VR" />
+    <!-- <meta property="og:image" content="https://sandbox.clservicesny.com/design_window/images/featured.jpg" /> -->
+    <title>Canter</title>
+    <link rel="icon" type="image/png" href="images/svg/fav.svg">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script><!-- jQuery CDN Link -->
+
+</head>
+
+<body class="m-0 p-0 bg-black box-border ">
+    <div class="main-div overflow-hidden">
+        <!-- HEADER SECTION START -->
+        <header class="fixed w-full z-[999] top-0 left-0">
+            <div class="container">
+                <nav class="flex justify-between items-center flex-wrap lg:flex-nowrap py-[20px] lg:py-[38px]">
+                    <a href="index.html" class="w-[120px] md:w-[179px] "><img class="" src="images/svg/logo.svg"
+                            alt="logo"></a>
+                    <button type="button" class="lg:hidden trigger">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M2.66406 9.33333C2.66406 8.59695 3.26102 8 3.9974 8H27.9974C28.7338 8 29.3307 8.59695 29.3307 9.33333C29.3307 10.0697 28.7338 10.6667 27.9974 10.6667H3.9974C3.26102 10.6667 2.66406 10.0697 2.66406 9.33333Z"
+                                fill="white" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M2.66406 16.0003C2.66406 15.2639 3.26102 14.667 3.9974 14.667H27.9974C28.7338 14.667 29.3307 15.2639 29.3307 16.0003C29.3307 16.7367 28.7338 17.3337 27.9974 17.3337H3.9974C3.26102 17.3337 2.66406 16.7367 2.66406 16.0003Z"
+                                fill="white" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M2.66406 22.6663C2.66406 21.93 3.26102 21.333 3.9974 21.333H14.6641C15.4004 21.333 15.9974 21.93 15.9974 22.6663C15.9974 23.4027 15.4004 23.9997 14.6641 23.9997H3.9974C3.26102 23.9997 2.66406 23.4027 2.66406 22.6663Z"
+                                fill="white" />
+                        </svg>
+
+                    </button>
+                    <div class="toogle-menu hidden lg:block w-full">
+                        <div
+                            class="lg:ps-[122.5px]  pt-4 lg:pt-0 flex flex-col lg:flex-row items-end lg:items-center gap-5 lg:gap-0 justify-between ">
+                            <ul class="flex flex-col items-end lg:flex-row gap-5 lg:gap-12">
+                                <li>
+                                    <a href="#" class="text-sm md:text-base font-medium hover:underline">News</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-sm md:text-base font-medium hover:underline">Features</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-sm md:text-base font-medium hover:underline">Premium</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-sm md:text-base font-medium hover:underline">Download</a>
+                                </li>
+                            </ul>
+                            <div class="flex">
+                                <a href="#"
+                                    class="font-medium text-sm md:text-base text-white whitespace-nowrap px-4 py-2 md:px-8 md:py-[10px] hover:scale-110 transition-all">LOG
+                                    IN</a>
+                                <a href="#"
+                                    class=" btn-a relative z-0 font-medium text-sm md:text-base text-white whitespace-nowrap bg-gradient-to-r from-[#691EFF] to-[#02BFFF] px-4 py-2 md:px-8 md:py-[10px] before:absolute before:top-0 before:left-0 before:h-full before:w-0 before:bg-[#691eff] before:transition-all before:duration-300 before:ease-linear before:z-[-1] before:content-[''] hover:before:w-full">SIGN
+                                    UP</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!-- HEADER SECTION FINISHED -->
+        <!-- BANNER SECTION START -->
+        <section
+            class="banner-section relative z-[888] before:absolute before:inset-x-0 before:bottom-[-78%] sm:before:bottom-[-53%] before:left-[-20%] 2xl:before:bottom-[-62%] before:h-[158%] sm:before:h-[120%] before:w-[120%] before:z-[1] before:bg-no-repeat before:bg-[90%_0] 2xl:before:bg-center before:bg-cover before:content-[''] before:bg-[url('images/banner-layer.png')] box-shadow">
+            <div class="absolute top-0 h-full w-full flex items-end 2xl:items-center pb-20 2xl:pb-0 pt-12">
+                <div class="container">
+                    <div class="banner-inner flex flex-col lg:flex-row">
+                        <div class="banner-info w-full 2xl:w-1/2 relative z-[1] order-1 lg:-order-none">
+                            <div class="banner-info-inner flex flex-col wow fadeInUp" data-wow-delay="0.3s">
+                                <h1
+                                    class="text-5xl lg:text-[77px] xl:text-[96px] 2xl:text-[110px] leading-[52px] lg:leading-[77px] xl:leading-[96px] 2xl:leading-[110px] font-normal text-white">
+                                    Access your<br> computer<br> remotely in
+                                    VR</h1>
+                                <p
+                                    class="text-base w-[300px] lg:w-[500px] 2xl:w-[unset] 2xl:text-2xl 2xl:leading-10 font-normal text-white 2xl:tracking-[0.48px] pt-6 2xl:pt-10 pb-8 2xl:pb-12">
+                                    Using VR to
+                                    bring people together,
+                                    reimagine workspaces, consolidate communications, and collaborate more seamlessly,
+                                    whether you are in a boardroom, classroom, or anywhere else in between.</p>
+                                <div class="btn ">
+                                    <button
+                                        class="font-medium text-base text-white h-12 flex items-center justify-center px-8 tracking-[0.8px] relative z-0 before:absolute before:top-0 before:left-0 before:h-full before:w-0 before:bg-[#9E68B5] before:transition-all before:duration-300 before:ease-linear before:z-[-1] before:content-[''] hover:before:w-full">GET
+                                        STARTED FOR FREE</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="banner-empty  w-full 2xl:w-1/2">
+                            <div class="banner-img relative lg:static 2xl:relative">
+                                <img class="absolute top-[-237px] sm:top-[-304px] lg:top-[112px] xl:top-[168px] 2xl:top-[-96px] right-[-89px] lg:right-0 xl:right-[74px] 2xl:left-[-84px] z-0 w-[582px] lg:w-[534px] xl:w-[565px] 2xl:w-[unset] wow fadeInUp"
+                                    data-wow-delay="0.3s" src="images/banner-img.png" alt="banner-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-img">
+                <img class="w-full min-h-screen 2xl:min-h-[unset] h-full object-cover" src="images/banner-bg.png"
+                    alt="banner-img">
+            </div>
+        </section>
+        <!-- BANNER SECTION FINISHED -->
+        <!-- WORK SECTION START -->
+        <section
+            class="work-section relative z-[777] before:absolute before:bottom-[-45%] sm:before:bottom-[-58%] 2xl:before:bottom-[-40%] before:right-0 before:h-full before:w-full before:z-[2] before:bg-no-repeat before:bg-[10%_0] sm:before:bg-center before:bg-cover before:content-[''] before:bg-[url('images/work-layer.png')] box-shadow">
+            <div class="absolute top-0 h-full w-full flex items-end 2xl:items-center pb-11 2xl:pb-0 pt-[70px]">
+                <div class="container">
+                    <div class="work-inner flex flex-col lg:flex-row">
+                        <div class="work-empty  w-full 2xl:w-1/2">
+                            <div class="work-img relative">
+                                <img class="absolute z-[1] top-[-304px] xl:top-[-328px] lg:top-[-296px] left-[-83px] sm:left-[-160px] md:left-[-71px] lg:left-[-30px]  xl:right-[-100px] sm:w-[530px] xl:w-[unset] wow fadeInUp"
+                                    data-wow-delay="0.3s" src="images/work-img.png" alt="banner-img">
+                            </div>
+                        </div>
+                        <div class="work-info w-full 2xl:w-1/2 relative z-[2] sm:flex sm:justify-end">
+                            <div class="work-info-inner flex flex-col wow fadeInUp" data-wow-delay="0.3s">
+                                <h1
+                                    class="text-5xl lg:text-[73px] xl:text-[91px] 2xl:text-[110px] leading-[52px] lg:leading-[73px] xl:leading-[91px] 2xl:leading-[110px] font-normal text-white">
+                                    Work Better<br> Together, While<br> Abroad</h1>
+                                <p
+                                    class="text-base w-[300px] lg:w-[500px] 2xl:w-[unset] 2xl:text-2xl 2xl:leading-10 font-normal text-white 2xl:tracking-[0.48px] pt-6 2xl:pt-10 pb-8 2xl:pb-12">
+                                    Using VR to bring people together, reimagine workspaces, consolidate communications,
+                                    and
+                                    collaborate more seamlessly,
+                                    whether you are in a boardroom, classroom, or anywhere else in between.</p>
+                                <div class="btn">
+                                    <button
+                                        class="font-medium text-base text-white h-12 flex items-center justify-center px-8 tracking-[0.8px] relative z-0 before:absolute before:top-0 before:left-0 before:h-full before:w-0 before:bg-[#9E68B5] before:transition-all before:duration-300 before:ease-linear before:z-[-1] before:content-[''] hover:before:w-full">GET
+                                        STARTED FOR FREE</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-img">
+                <img class="w-full min-h-dvh 2xl:min-h-[unset] h-full object-cover" src="images/work-bg.png"
+                    alt="banner-img">
+            </div>
+        </section>
+        <!-- WORK SECTION FINISHED -->
+        <!-- TRAVEL SECTION START -->
+        <section
+            class="travel-section relative z-[666] before:absolute before:bottom-[-31%] lg:before:bottom-[-36%] xl:before:bottom-[-35%] before:right-0 before:h-[70%] xl:before:h-[67%] before:w-full before:z-[3] before:bg-no-repeat before:bg-center before:bg-cover before:content-[''] before:bg-[url('images/travel-layer.png')]">
+            <div
+                class="absolute top-0 h-full w-full flex items-end 2xl:items-center pb-11 2xl:pb-0 pt-[70px] xl:pb-[142px]">
+                <div class="container">
+                    <div class="travel-inner flex flex-col lg:flex-row">
+                        <div class="travel-info w-full 2xl:w-1/2 relative z-[3] order-1 lg:-order-none">
+                            <div class="travel-info-inner flex flex-col wow fadeInUp" data-wow-delay="0.3s">
+                                <h1
+                                    class="text-5xl lg:text-[77px] xl:text-[96px] 2xl:text-[110px] leading-[52px] lg:leading-[77px] xl:leading-[96px] 2xl:leading-[110px] font-normal text-white">
+                                    Travel Even<br> Lighter</h1>
+                                <p
+                                    class="text-base w-[300px] lg:w-[500px] 2xl:w-[unset] 2xl:text-2xl 2xl:leading-10 font-normal text-white 2xl:tracking-[0.48px] pt-6 2xl:pt-10 pb-8 2xl:pb-12">
+                                    Using VR to bring people together, reimagine workspaces, consolidate communications,
+                                    and
+                                    collaborate more seamlessly,
+                                    whether you are in a boardroom, classroom, or anywhere else in between.</p>
+                                <div class="btn">
+                                    <button
+                                        class="font-medium text-base text-white h-12 flex items-center justify-center px-8 tracking-[0.8px] relative z-0 before:absolute before:top-0 before:left-0 before:h-full before:w-0 before:bg-[#9E68B5] before:transition-all before:duration-300 before:ease-linear before:z-[-1] before:content-[''] hover:before:w-full">GET
+                                        STARTED FOR FREE</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="travel-empty w-full 2xl:w-1/2">
+                            <div class="travel-img relative">
+                                <img class="absolute z-[2] top-[-204px] sm:top-[-257px] xl:top-[-213px] 2xl:top-[-84px] right-[-29px] lg:right-[100px] sm:right-0 xl:right-[195px] 2xl:right-[156px] w-auto 2xl:w-[409px] h-[500px] sm:h-[619px] xl:h-[700px] 2xl:h-[1087px] wow fadeInUp"
+                                    data-wow-delay="0.3s" src="images/travel-img.png" alt="banner-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-img">
+                <img class="w-full min-h-dvh 2xl:min-h-[unset] h-full object-cover" src="images/travel-bg.png"
+                    alt="banner-img">
+            </div>
+        </section>
+        <!-- TRAVEL SECTION FINISHED -->
+        <!-- SAFE SECTION START -->
+        <section
+            class="safe-section relative z-[555] before:absolute before:bottom-[-25%] before:right-0 before:h-[75%] before:w-full before:z-[4] before:bg-no-repeat before:bg-center before:bg-cover before:content-[''] before:bg-[url('images/safe-layer.png')] box-shadow">
+            <div
+                class="absolute top-0 h-full w-full flex items-end 2xl:items-center pb-11 2xl:pb-0 pt-[70px] md:pt-[313px]">
+                <div class="container">
+                    <div class="safe-inner flex flex-col sm:flex-row">
+                        <div class="safe-empty  w-full 2xl:w-1/2"></div>
+                        <div class="safe-info w-full 2xl:w-1/2 relative z-[4]">
+                            <div class="safe-info-inner flex flex-col wow fadeInUp" data-wow-delay="0.3s">
+                                <h1
+                                    class="text-5xl lg:text-[77px] xl:text-[96px] 2xl:text-[110px] leading-[52px] lg:leading-[77px] xl:leading-[96px] 2xl:leading-[110px] font-normal text-white">
+                                    Safe & Secure</h1>
+                                <p
+                                    class="text-base w-[300px] lg:w-[500px] 2xl:w-[unset] 2xl:text-2xl 2xl:leading-10 font-normal text-white 2xl:tracking-[0.48px] pt-6 2xl:pt-10 pb-8 2xl:pb-12">
+                                    Traveling with your expensive laptop risking theft and damages is a thing of the
+                                    past.
+                                    With
+                                    Canter VR, you can connect
+                                    to your workstation securely in VR and utilize its full performance</p>
+                                <div class="btn">
+                                    <button
+                                        class="font-medium text-base text-white h-12 flex items-center justify-center px-8 tracking-[0.8px] relative z-0 before:absolute before:top-0 before:left-0 before:h-full before:w-0 before:bg-[#9E68B5] before:transition-all before:duration-300 before:ease-linear before:z-[-1] before:content-[''] hover:before:w-full">GET
+                                        STARTED FOR FREE</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-img">
+                <img class="hidden md:block w-full min-h-dvh 2xl:min-h-[unset] h-full object-cover"
+                    src="images/safe-bg.png" alt="banner-img">
+                <img class="md:hidden block w-full min-h-dvh 2xl:min-h-[unset] h-full object-cover"
+                    src="images/safe-bg2.png" alt="banner-img">
+            </div>
+        </section>
+        <!-- SAFE SECTION FINISHED -->
+        <!-- SHARING SECTION START -->
+        <section class="sharing-section relative z-[444]">
+            <div class="absolute top-0 h-full w-full flex items-end 2xl:items-center pb-11 2xl:pb-0 pt-[70px]">
+                <div class="container">
+                    <div class="sharing-inner flex flex-row">
+                        <div class="sharing-info w-full 2xl:w-1/2 z-[5]">
+                            <div class="sharing-info-inner flex flex-col wow fadeInUp" data-wow-delay="0.3s">
+                                <h1
+                                    class="text-[44px] lg:text-[77px] xl:text-[96px] 2xl:text-[110px] leading-[52px] lg:leading-[77px] xl:leading-[96px] 2xl:leading-[110px] font-normal text-white">
+                                    Immersive<br> Screen Sharing<br> Wherever You<br class="sm:hidden"> Are</h1>
+                                <p
+                                    class="text-base w-[300px] lg:w-[500px] 2xl:w-[unset] 2xl:text-2xl 2xl:leading-10 font-normal text-white 2xl:tracking-[0.48px] pt-6 2xl:pt-10 pb-8 2xl:pb-12">
+                                    Bring teams together in a virtual workspace for even more seamless collaboration and
+                                    remote
+                                </p>
+                                <div class="btn">
+                                    <button
+                                        class="font-medium text-base text-white h-12 flex items-center justify-center px-8 tracking-[0.8px] relative z-0 before:absolute before:top-0 before:left-0 before:h-full before:w-0 before:bg-[#9E68B5] before:transition-all before:duration-300 before:ease-linear before:z-[-1] before:content-[''] hover:before:w-full">GET
+                                        STARTED FOR FREE</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sharing-empty  w-full 2xl:w-1/2"></div>
+                    </div>
+                    <div class="hidden lg:flex reviews-box pt-[65px] flex-col md:flex-row">
+                        <div class="review-item relative z-[1] left-[29px] 2xl:left-0 wow fadeInUp"
+                            data-wow-delay="0.3s">
+                            <div
+                                class="review-img absolute left-[-51px] bottom-[-20px] w-[98px] h-[98px] rounded-full overflow-hidden border-8 border-black">
+                                <img class="object-cover w-full h-full" src="images/review-img1.png" alt="review-img">
+                            </div>
+                            <div class="review-msg p-5 ps-[68px] bg-white rounded-xl w-full max-w-[462px]">
+                                <h5 class="font-medium text-xs text-black pb-[10px]">Michael Stone<span
+                                        class="text-xs ps-2 text-[#828282]">5h ago</span></h5>
+                                <p class="font-normal text-xs text-[#0C0C0C]">Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                            </div>
+                        </div>
+                        <div class="review-item relative left-[65px] 2xl:left-[99px] top-[81px] z-[1] wow fadeInUp"
+                            data-wow-delay="0.3s">
+                            <div
+                                class="review-img absolute left-[-37px] bottom-[9px] w-[72px] h-[72px] rounded-full overflow-hidden border-[6px] border-black">
+                                <img class="object-cover w-full h-full" src="images/review-img2.png" alt="review-img">
+                            </div>
+                            <div class="review-msg p-[13px] ps-[51px] bg-white rounded-xl w-full max-w-[340px]">
+                                <h5 class="font-medium text-[11px] text-black pb-[10px]">Samantha Fisher<span
+                                        class="text-[11px] ps-2 text-[#828282]">5h ago</span></h5>
+                                <p class="font-normal text-[9px] leading-[13px] text-[#0C0C0C]">Lorem ipsum dolor sit
+                                    amet,
+                                    consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                            </div>
+                        </div>
+                        <div class="review-item relative top-[-19px] 2xl:top-[-11px] left-[40px] z-[1] wow fadeInUp"
+                            data-wow-delay="0.3s">
+                            <div
+                                class="review-img absolute left-[-31px] bottom-[21px] w-[60px] h-[60px] rounded-full overflow-hidden border-[5px] border-black">
+                                <img class="object-cover w-full h-full" src="images/review-img3.png" alt="review-img">
+                            </div>
+                            <div class="review-msg p-3 ps-[41px] bg-white rounded-xl w-full max-w-[283px]">
+                                <h5 class="font-medium text-[8px] text-black pb-[10px]">Sarah Jons<span
+                                        class="text-[8px] ps-2 text-[#828282]">5h ago</span></h5>
+                                <p class="font-normal text-[8px] leading-[12px] text-[#0C0C0C]">Lorem ipsum dolor sit
+                                    amet,
+                                    consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                            </div>
+                        </div>
+                        <div class="review-item relative bottom-[-82px] right-0 2xl:right-[-207px] z-[1] wow fadeInUp"
+                            data-wow-delay="0.3s">
+                            <div
+                                class="review-img absolute left-[-21px] bottom-[34px] w-[49px] h-[49px] rounded-full overflow-hidden border-4 border-black">
+                                <img class="object-cover w-full h-full" src="images/review-img4.png" alt="review-img">
+                            </div>
+                            <div class="review-msg p-[10px] ps-[34px] bg-white rounded-xl w-full max-w-[230px]">
+                                <h5 class="font-medium text-[7px] text-black pb-[10px]">Sam Fisher<span
+                                        class="text-[7px] ps-2 text-[#828282]">5h ago</span></h5>
+                                <p class="font-normal text-[7px] leading-[10px] text-[#0C0C0C]">Lorem ipsum dolor sit
+                                    amet,
+                                    consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-img">
+                <img class="hidden md:block w-full min-h-dvh 2xl:min-h-[unset] h-full object-cover"
+                    src="images/sharing-bg.png" alt="banner-img">
+                <img class="md:hidden block w-full min-h-[50vh] 2xl:min-h-[unset] h-full object-cover"
+                    src="images/sharing-bg2.png" alt="banner-img">
+            </div>
+        </section>
+        <!-- SHARING SECTION FINISHED -->
+        <!-- DOWNLOAD SECTION START -->
+        <section class="download-section relative z-[333]">
+            <div class="absolute top-0 h-full w-full flex items-center">
+                <div class="container wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="download-div flex flex-col items-center gap-6">
+                        <p class="text-base">Download for free:</p>
+                        <div class="download-img flex gap-16">
+                            <a href="#"><img src="images/svg/google-play.svg" alt="download-img"></a>
+                            <a href="#"><img src="images/svg/app-store.svg" alt="download-img"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-img">
+                <img class="w-full min-h-[50vh] 2xl:min-h-[unset] h-full object-cover" src="images/download-bg.png"
+                    alt="banner-img">
+            </div>
+        </section>
+        <!-- DOWNLOAD SECTION FINISHED -->
+        <!-- FOOTER SECTION START -->
+        <footer class="pb-7 pt-4 ">
+            <div class="container">
+                <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                    <a href="index.html" class="w-[120px] md:w-[179px] pb-12 md:pb-0"><img src="images/svg/logo.svg"
+                            alt="logo"></a>
+                    <ul class="flex flex-col items-center md:items-start md:flex-row gap-6 md:gap-12">
+                        <li>
+                            <a href="#" class="text-sm md:text-base font-medium hover:underline">News</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-sm md:text-base font-medium hover:underline">Features</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-sm md:text-base font-medium hover:underline">Premium</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-sm md:text-base font-medium hover:underline">Download</a>
+                        </li>
+                    </ul>
+                    <div class="flex gap-6 pt-12 md:pt-0">
+                        <a class="facebook" href=""><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_5542_4583)">
+                                    <path
+                                        d="M14 13.5039H16.5L17.5 9.50391H14V7.50391C14 6.47391 14 5.50391 16 5.50391H17.5V2.14391C17.174 2.10091 15.943 2.00391 14.643 2.00391C11.928 2.00391 10 3.66091 10 6.70391V9.50391H7V13.5039H10V22.0039H14V13.5039Z"
+                                        fill="white" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_5542_4583">
+                                        <rect width="24" height="24" fill="white" transform="translate(0 0.00390625)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                        <a class="linkedin" href=""><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_5542_4587)">
+                                    <path
+                                        d="M6.9375 5.00491C6.93724 5.53534 6.72627 6.04394 6.35101 6.41883C5.97575 6.79371 5.46693 7.00417 4.9365 7.00391C4.40607 7.00364 3.89746 6.79267 3.52258 6.41741C3.14769 6.04215 2.93724 5.53334 2.9375 5.00291C2.93777 4.47247 3.14873 3.96387 3.52399 3.58899C3.89925 3.2141 4.40807 3.00364 4.9385 3.00391C5.46893 3.00417 5.97754 3.21514 6.35242 3.5904C6.72731 3.96566 6.93777 4.47447 6.9375 5.00491ZM6.9975 8.48491H2.9975V21.0049H6.9975V8.48491ZM13.3175 8.48491H9.3375V21.0049H13.2775V14.4349C13.2775 10.7749 18.0475 10.4349 18.0475 14.4349V21.0049H21.9975V13.0749C21.9975 6.90491 14.9375 7.13491 13.2775 10.1649L13.3175 8.48491Z"
+                                        fill="white" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_5542_4587">
+                                        <rect width="24" height="24" fill="white" transform="translate(0 0.00390625)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+
+                        </a>
+                        <a class="youtube" href=""><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_5542_4591)">
+                                    <path
+                                        d="M21.543 6.50191C22 8.28391 22 12.0039 22 12.0039C22 12.0039 22 15.7239 21.543 17.5059C21.289 18.4909 20.546 19.2659 19.605 19.5279C17.896 20.0039 12 20.0039 12 20.0039C12 20.0039 6.107 20.0039 4.395 19.5279C3.45 19.2619 2.708 18.4879 2.457 17.5059C2 15.7239 2 12.0039 2 12.0039C2 12.0039 2 8.28391 2.457 6.50191C2.711 5.51691 3.454 4.74191 4.395 4.47991C6.107 4.00391 12 4.00391 12 4.00391C12 4.00391 17.896 4.00391 19.605 4.47991C20.55 4.74591 21.292 5.51991 21.543 6.50191ZM10 15.5039L16 12.0039L10 8.50391V15.5039Z"
+                                        fill="white" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_5542_4591">
+                                        <rect width="24" height="24" fill="white" transform="translate(0 0.00390625)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+
+                        </a>
+                        <a class="instagram" href=""><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_5542_4595)">
+                                    <path
+                                        d="M12 2.00391C14.717 2.00391 15.056 2.01391 16.122 2.06391C17.187 2.11391 17.912 2.28091 18.55 2.52891C19.21 2.78291 19.766 3.12691 20.322 3.68191C20.8305 4.1818 21.224 4.78649 21.475 5.45391C21.722 6.09091 21.89 6.81691 21.94 7.88191C21.987 8.94791 22 9.28691 22 12.0039C22 14.7209 21.99 15.0599 21.94 16.1259C21.89 17.1909 21.722 17.9159 21.475 18.5539C21.2247 19.2217 20.8311 19.8265 20.322 20.3259C19.822 20.8342 19.2173 21.2277 18.55 21.4789C17.913 21.7259 17.187 21.8939 16.122 21.9439C15.056 21.9909 14.717 22.0039 12 22.0039C9.283 22.0039 8.944 21.9939 7.878 21.9439C6.813 21.8939 6.088 21.7259 5.45 21.4789C4.78233 21.2284 4.17753 20.8349 3.678 20.3259C3.16941 19.8261 2.77593 19.2214 2.525 18.5539C2.277 17.9169 2.11 17.1909 2.06 16.1259C2.013 15.0599 2 14.7209 2 12.0039C2 9.28691 2.01 8.94791 2.06 7.88191C2.11 6.81591 2.277 6.09191 2.525 5.45391C2.77524 4.78609 3.1688 4.18123 3.678 3.68191C4.17767 3.17314 4.78243 2.77964 5.45 2.52891C6.088 2.28091 6.812 2.11391 7.878 2.06391C8.944 2.01691 9.283 2.00391 12 2.00391ZM12 7.00391C10.6739 7.00391 9.40215 7.53069 8.46447 8.46837C7.52678 9.40605 7 10.6778 7 12.0039C7 13.33 7.52678 14.6018 8.46447 15.5394C9.40215 16.4771 10.6739 17.0039 12 17.0039C13.3261 17.0039 14.5979 16.4771 15.5355 15.5394C16.4732 14.6018 17 13.33 17 12.0039C17 10.6778 16.4732 9.40605 15.5355 8.46837C14.5979 7.53069 13.3261 7.00391 12 7.00391ZM18.5 6.75391C18.5 6.42239 18.3683 6.10444 18.1339 5.87002C17.8995 5.6356 17.5815 5.50391 17.25 5.50391C16.9185 5.50391 16.6005 5.6356 16.3661 5.87002C16.1317 6.10444 16 6.42239 16 6.75391C16 7.08543 16.1317 7.40337 16.3661 7.63779C16.6005 7.87221 16.9185 8.00391 17.25 8.00391C17.5815 8.00391 17.8995 7.87221 18.1339 7.63779C18.3683 7.40337 18.5 7.08543 18.5 6.75391ZM12 9.00391C12.7956 9.00391 13.5587 9.31998 14.1213 9.88259C14.6839 10.4452 15 11.2083 15 12.0039C15 12.7996 14.6839 13.5626 14.1213 14.1252C13.5587 14.6878 12.7956 15.0039 12 15.0039C11.2044 15.0039 10.4413 14.6878 9.87868 14.1252C9.31607 13.5626 9 12.7996 9 12.0039C9 11.2083 9.31607 10.4452 9.87868 9.88259C10.4413 9.31998 11.2044 9.00391 12 9.00391Z"
+                                        fill="white" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_5542_4595">
+                                        <rect width="24" height="24" fill="white" transform="translate(0 0.00390625)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+
+                        </a>
+                        <a class="twitter" href=""><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_5542_4599)">
+                                    <path
+                                        d="M22.1643 5.65886C21.4008 5.99655 20.5912 6.21833 19.7623 6.31686C20.636 5.79429 21.29 4.97187 21.6023 4.00286C20.7823 4.49086 19.8833 4.83286 18.9463 5.01786C18.3169 4.34444 17.4826 3.89782 16.5732 3.74744C15.6638 3.59706 14.7302 3.75135 13.9175 4.18631C13.1048 4.62127 12.4586 5.31254 12.0794 6.15265C11.7001 6.99276 11.609 7.93464 11.8202 8.83186C10.1574 8.74851 8.53058 8.31638 7.04554 7.56352C5.56049 6.81066 4.25038 5.7539 3.20025 4.46186C2.82854 5.10031 2.63321 5.82608 2.63425 6.56486C2.63425 8.01486 3.37225 9.29586 4.49425 10.0459C3.83026 10.025 3.18088 9.84564 2.60025 9.52286V9.57486C2.60045 10.5406 2.93462 11.4765 3.5461 12.2239C4.15758 12.9714 5.00873 13.4843 5.95525 13.6759C5.33886 13.8429 4.69256 13.8675 4.06525 13.7479C4.33212 14.5791 4.85226 15.3061 5.55284 15.827C6.25343 16.3479 7.09938 16.6367 7.97225 16.6529C7.10473 17.3342 6.11143 17.8378 5.04913 18.135C3.98683 18.4322 2.87638 18.5171 1.78125 18.3849C3.69295 19.6143 5.91835 20.267 8.19125 20.2649C15.8842 20.2649 20.0913 13.8919 20.0913 8.36486C20.0913 8.18486 20.0863 8.00286 20.0783 7.82486C20.8971 7.23302 21.6038 6.49988 22.1653 5.65986L22.1643 5.65886Z"
+                                        fill="white" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_5542_4599">
+                                        <rect width="24" height="24" fill="white" transform="translate(0 0.00390625)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+
+                        </a>
+                    </div>
+                </div>
+                <div class="flex flex-col-reverse md:flex-row items-center md:justify-between gap-5 md:gap-10 pt-7">
+                    <p class="text-xs font-light text-white">&copy; Canter App <span id="currentYear"></span></p>
+                    <div class="text-xs font-light text-white flex gap-3">
+                        <a href="#" class="hover:underline">Terms</a> |
+                        <a href="#" class="hover:underline">Privacy</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- FOOTER SECTION FINISHED -->
+    </div>
+    <script src="script/wow.js"></script>
+    <script src="script/script.js"></script>
+</body>
+
+
+
+</html>
